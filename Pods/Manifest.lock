@@ -1,0 +1,20 @@
+PODS:
+  - ProgressHUD (2.51)
+  - SwipeCellKit (2.5.1)
+
+DEPENDENCIES:
+  - ProgressHUD
+  - SwipeCellKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ProgressHUD
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  ProgressHUD: 54b4c2fa202bf3da7dddc1c698ae4e6376333bd9
+  SwipeCellKit: 30fd6a4f8a8b8ac864ea389c8b4c8bac5ba5471a
+
+PODFILE CHECKSUM: 4d55b9bae2601b3f327191b717147137f48a68c1
+
+COCOAPODS: 1.5.3

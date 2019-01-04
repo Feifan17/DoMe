@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		3D391DB421DA846900E5DEC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D391DB321DA846900E5DEC8 /* AppDelegate.swift */; };
-		3D391DB621DA846900E5DEC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D391DB521DA846900E5DEC8 /* ViewController.swift */; };
+		3D391DB621DA846900E5DEC8 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D391DB521DA846900E5DEC8 /* TodoListViewController.swift */; };
 		3D391DB921DA846900E5DEC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D391DB721DA846900E5DEC8 /* Main.storyboard */; };
 		3D391DBB21DA846900E5DEC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D391DBA21DA846900E5DEC8 /* Assets.xcassets */; };
 		3D391DBE21DA846900E5DEC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D391DBC21DA846900E5DEC8 /* LaunchScreen.storyboard */; };
+		3DC3CF9B21DBC57700035B95 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3CF9921DBC57700035B95 /* DataModel.xcdatamodeld */; };
+		3DC3CFBE21DD25AA00035B95 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3CFBD21DD25AA00035B95 /* CategoryViewController.swift */; };
+		3DC3CFC021DF067900035B95 /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3CFBF21DF067900035B95 /* SwipeTableViewController.swift */; };
+		67CFDA59C672D03B7B6AD171 /* Pods_DoMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B468EED11B54AB261D7FA1CA /* Pods_DoMe.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D391DB021DA846900E5DEC8 /* DoMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D391DB321DA846900E5DEC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D391DB521DA846900E5DEC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D391DB521DA846900E5DEC8 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		3D391DB821DA846900E5DEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D391DBA21DA846900E5DEC8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D391DBD21DA846900E5DEC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D391DBF21DA846900E5DEC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC3CF9A21DBC57700035B95 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		3DC3CFBD21DD25AA00035B95 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		3DC3CFBF21DF067900035B95 /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
+		559783DFE7F52A32F5E5A131 /* Pods-DoMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DoMe/Pods-DoMe.debug.xcconfig"; sourceTree = "<group>"; };
+		945150F027DDEF42829131EB /* Pods-DoMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DoMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-DoMe/Pods-DoMe.release.xcconfig"; sourceTree = "<group>"; };
+		B468EED11B54AB261D7FA1CA /* Pods_DoMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DoMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67CFDA59C672D03B7B6AD171 /* Pods_DoMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				3D391DB221DA846900E5DEC8 /* DoMe */,
 				3D391DB121DA846900E5DEC8 /* Products */,
+				F70250B6F1385DB5229CB14C /* Pods */,
+				5AEAB23B794ABE513377D359 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +68,65 @@
 			isa = PBXGroup;
 			children = (
 				3D391DB321DA846900E5DEC8 /* AppDelegate.swift */,
-				3D391DB521DA846900E5DEC8 /* ViewController.swift */,
-				3D391DB721DA846900E5DEC8 /* Main.storyboard */,
-				3D391DBA21DA846900E5DEC8 /* Assets.xcassets */,
-				3D391DBC21DA846900E5DEC8 /* LaunchScreen.storyboard */,
+				3D391DC921DAAE2800E5DEC8 /* Controller */,
+				3D391DC821DAAE1800E5DEC8 /* View */,
+				3D391DC721DAAE0400E5DEC8 /* Model */,
+				3D391DCA21DAAE7300E5DEC8 /* Supporting File */,
 				3D391DBF21DA846900E5DEC8 /* Info.plist */,
 			);
 			path = DoMe;
+			sourceTree = "<group>";
+		};
+		3D391DC721DAAE0400E5DEC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3CF9921DBC57700035B95 /* DataModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D391DC821DAAE1800E5DEC8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D391DB721DA846900E5DEC8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D391DC921DAAE2800E5DEC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3CFBD21DD25AA00035B95 /* CategoryViewController.swift */,
+				3D391DB521DA846900E5DEC8 /* TodoListViewController.swift */,
+				3DC3CFBF21DF067900035B95 /* SwipeTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3D391DCA21DAAE7300E5DEC8 /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				3D391DBC21DA846900E5DEC8 /* LaunchScreen.storyboard */,
+				3D391DBA21DA846900E5DEC8 /* Assets.xcassets */,
+			);
+			path = "Supporting File";
+			sourceTree = "<group>";
+		};
+		5AEAB23B794ABE513377D359 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B468EED11B54AB261D7FA1CA /* Pods_DoMe.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F70250B6F1385DB5229CB14C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				559783DFE7F52A32F5E5A131 /* Pods-DoMe.debug.xcconfig */,
+				945150F027DDEF42829131EB /* Pods-DoMe.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D391DC221DA846900E5DEC8 /* Build configuration list for PBXNativeTarget "DoMe" */;
 			buildPhases = (
+				518E7F255D5B30020D0DEA83 /* [CP] Check Pods Manifest.lock */,
 				3D391DAC21DA846900E5DEC8 /* Sources */,
 				3D391DAD21DA846900E5DEC8 /* Frameworks */,
 				3D391DAE21DA846900E5DEC8 /* Resources */,
+				764A348DB676543C9A951E51 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +197,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		518E7F255D5B30020D0DEA83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DoMe-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		764A348DB676543C9A951E51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DoMe/Pods-DoMe-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DoMe/Pods-DoMe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D391DAC21DA846900E5DEC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D391DB621DA846900E5DEC8 /* ViewController.swift in Sources */,
+				3DC3CFBE21DD25AA00035B95 /* CategoryViewController.swift in Sources */,
+				3D391DB621DA846900E5DEC8 /* TodoListViewController.swift in Sources */,
+				3DC3CF9B21DBC57700035B95 /* DataModel.xcdatamodeld in Sources */,
 				3D391DB421DA846900E5DEC8 /* AppDelegate.swift in Sources */,
+				3DC3CFC021DF067900035B95 /* SwipeTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +399,7 @@
 		};
 		3D391DC321DA846900E5DEC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 559783DFE7F52A32F5E5A131 /* Pods-DoMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +418,7 @@
 		};
 		3D391DC421DA846900E5DEC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 945150F027DDEF42829131EB /* Pods-DoMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -336,6 +457,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3DC3CF9921DBC57700035B95 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DC3CF9A21DBC57700035B95 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 3DC3CF9A21DBC57700035B95 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3D391DA821DA846900E5DEC8 /* Project object */;
 }
